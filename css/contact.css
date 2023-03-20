@@ -1,0 +1,550 @@
+@import url('reset.css');
+
+body {
+    /* width: 100vw; */
+    font-size: 20px;
+    font-family: 'Noto Sans TC';
+    line-height: 1.6;
+    
+    box-sizing: border-box;
+
+
+}
+
+.button-group{
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    z-index: 100;
+    text-align: center;
+}
+
+.bookbutton > img{
+    height: 13vh;
+    opacity: .7;
+}
+
+.bookbutton > img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.topbutton > i{
+    font-size: 6vh;
+    opacity: .6;
+    color: #000;
+}
+
+.topbutton > i:hover{
+    opacity: 1;
+    /* transform: scale(1.5); */
+}
+
+
+
+/* -------------------------- footer -------------------------- */
+.top {
+    /* background: #51A6E1; */
+    /* opacity: 1; */
+    width: 100%;    
+    position: fixed;
+    z-index: 10;
+    background:#2EA9DF;
+
+
+}
+
+.header {
+    /* border: 1px solid blue;  */
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    /* padding: 10px 0; */
+
+    /* justify-content:first baseline; */
+}
+
+.logo {
+    padding: 10px 0 0 10px ;
+    display: flex;
+
+    /* height: 30px; */
+    /* border: 1px solid red; */
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+
+.menu {
+    /* border: 1px solid red; */
+    display: flex;
+    padding-top: 30px;
+    letter-spacing: 0.1em;
+    /* color: white; */
+
+
+
+}
+
+.menu li {
+
+    margin-left: 30px;
+    /* color: white; */
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    color: #ccc;
+    text-shadow: 5px 5px 4px #303030;
+}
+
+
+.header-right {
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.clock-time {
+    padding-top: 30px;
+    /* border: 2px solid green; */
+    display: flex;
+    padding-right: 10px;
+}
+
+.clock-time a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+
+.check {
+
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+.check a {
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #000;
+    /* font-size: 16px; */
+}
+
+.check a:hover{
+
+    box-shadow:5px 5px 4px #303030 ;
+    /* background-color: ; */
+    transition: right .2s ease;
+    color: #2EA9DF;
+   
+}
+
+
+
+/* -------------------  banner ------------------ */
+
+.banner {
+    position: relative;
+    /* border: 1px solid; */
+    /* width: 100vw; */
+    
+}
+
+.banner-img img{
+    width: 100%;
+    /* height: 850px; */
+}
+
+
+.banner-title{
+    /* border: 1px solid; */
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    
+}
+
+.banner-title::before{
+    content: "";
+    height: 1px;
+    background: #000;
+    top: 83%;
+    left: 11.2%;
+    width: 100px;
+    position: absolute;
+   
+}
+
+.banner-title h2{
+    margin-top: 10px;
+    padding-left: 200px;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: .3em;
+}
+
+/* ---------------- main top --------------------- */
+
+.main{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.main::before{
+    content: "";
+    width: 600px;
+    height: 2px;
+    background: #A46822;
+    position: absolute;
+    top: 540px;
+    left: -150px;
+    transform: rotate(90deg);
+    opacity: .7;
+
+}
+
+.main::after{
+    content: "Contact Us";
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 900px;
+    left: 100px;
+    height: 600px;
+    font-size: 64px;
+    font-family: 'Sedan SC', sans-serif;
+    color: #A46822;
+    letter-spacing: 0.3em;
+    opacity: .7;
+    /* border: 1px solid; */
+}
+
+.main-top{
+    /* padding: .5rem; */
+    margin-left: 300px;
+    margin-top: 20px;
+    font-size: 16px;
+    
+
+}
+
+.nav{
+    display: flex;
+    /* padding: 0; */
+    
+}
+
+
+.nav li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 1rem;
+    content: "/";
+}
+
+.nav li a{
+    text-decoration: none;
+
+    color: #000;
+}
+
+.nav .about{
+    color: #A46822; 
+}
+
+
+/* ------------- mian title---------- */
+.main-title{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;    
+}
+
+.main-title h1{
+    padding: 0 20px;
+    font-size: 36px;
+}
+
+.main-title img{
+    height: 30px;
+    padding-top: 17px;
+    
+}
+
+/* ---------- contact --------- */
+.contact-title{
+    display: flex;
+    justify-content: center;
+    padding: 0 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    /* border: 1px solid; */
+    line-height: 70px;
+    letter-spacing: .1em;
+
+    
+    
+}
+
+
+/* -------------------- contact-main ------------------*/
+
+.contace-main{
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lcation-content{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.traffic-information-list{
+    margin-top: 50px ;
+    display: flex;
+}
+
+.traffic-information-title{
+    
+    margin-right: 80px;
+    /* margin-bottom: 50px; */
+    font-size: 26px;
+}
+
+.title{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.traffic-information-title i{
+    color: #2EA9DF;
+    
+}
+
+.none {
+    background-color: rgba(46, 169, 223, .9);
+    display: none;
+    position: absolute;
+    width: 500px;
+}
+
+.title:hover .none{
+    display: block;
+}
+
+.car{
+    /* padding-top: 80px; */
+    top: 80px;
+    height: 80px;
+    position: relative;
+    animation: justcar 10s infinite;
+    z-index: -1;
+}
+
+@keyframes justcar {
+    0%{
+        left: 0;
+        transform: scale()
+    }
+
+    25%{
+        left: 150px;
+    }
+
+    50%{
+        left: 300px;
+    }
+
+    75%{
+        left: 500px;
+        transform: scale()
+    }
+
+    100%{
+        left: 700px;
+        
+        transform: scale();
+        
+    }
+}
+
+.car + span::after{
+    
+} 
+
+
+
+.form{
+    /* border: 1px solid; */
+    width: 100%;
+    padding: 0 80px;
+    /* margin-bottom: 500px; */
+}
+
+
+
+
+.form-item{
+    margin-bottom: 20px;
+}
+
+
+.form-item label{
+    font-weight: 200;
+    
+}
+
+.form-item select{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    padding: 5px 0;
+}
+    
+
+
+.form-item input{
+    padding: 7px 5px;
+    width: 100%;
+    line-height: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 200;
+
+}
+
+.form-item textarea{
+    width: 100%;
+}
+
+
+.submit {
+    text-align: center;
+    
+}
+
+.submit button{
+    width: 25%;
+    padding: 8px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2EA9DF;
+    color: white;
+    border: 0;
+}
+
+
+
+
+/* ------------------- bottom ---------------------- */
+.bottom{
+    background-color: #2EA9DF;
+    color: white;
+     margin-top: 200px;
+}
+
+.footer{
+    max-width: 1200px;
+    padding: 40px 0 10px 0;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+}
+
+.footer-nav li{
+    /* margin-right: 10px; */
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}
+
+
+
+.footer-logo{
+    height: 100px;
+    
+}
+
+.li-logo{
+    display: flex;
+    /* border: 1px solid white; */
+    
+}
+
+.hotelname{
+    padding-top: 35px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+.contact-us{
+    /* border: 1px solid red;    */
+    line-height: 2rem;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-align: left;
+    /* text-align: left; */
+    /* justify-content:flex-start */
+    /* height: 2.3rem; */
+    /* font-family: 'Sedan SC', sans-serif; */
+}
+
+.contact-us .p1{
+    /* font-family: 'Sedan SC', sans-serif; */
+    text-align: left;
+}
+
+
+.contact-us .p3{
+    /* font-family: 'Noto Sans TC'; */
+    text-align: left;
+}
+
+.follow-us {
+    width: 200px;
+    text-align: center  ;
+}
+
+.footer-icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .2em;
+    /* font-family: 'Sedan SC', sans-serif; */
+}

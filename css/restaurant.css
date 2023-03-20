@@ -1,0 +1,466 @@
+@import url('reset.css');
+
+body {
+    /* width: 100vw; */
+    font-size: 20px;
+    font-family: 'Noto Sans TC';
+    line-height: 1.6;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+
+
+}
+
+.button-group{
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    z-index: 100;
+    text-align: center;
+}
+
+.bookbutton > img{
+    height: 13vh;
+    opacity: .7;
+}
+
+.bookbutton > img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.topbutton > i{
+    font-size: 6vh;
+    opacity: .6;
+    color: #000;
+}
+
+.topbutton > i:hover{
+    opacity: 1;
+    /* transform: scale(1.5); */
+}
+
+
+
+/* -------------------------- footer -------------------------- */
+.top {
+    /* background: #51A6E1; */
+    /* opacity: 1; */
+    width: 100%;    
+    position: fixed;
+    z-index: 10;
+    background:#2EA9DF;
+
+
+}
+
+.header {
+    /* border: 1px solid blue;  */
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    /* padding: 10px 0; */
+
+    /* justify-content:first baseline; */
+}
+
+.logo {
+    padding: 10px 0 0 10px ;
+    display: flex;
+
+    /* height: 30px; */
+    /* border: 1px solid red; */
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+
+.menu {
+    /* border: 1px solid red; */
+    display: flex;
+    padding-top: 30px;
+    letter-spacing: 0.1em;
+    /* color: white; */
+
+
+
+}
+
+.menu li {
+
+    margin-left: 30px;
+    /* color: white; */
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    color: #ccc;
+    text-shadow: 5px 5px 4px #303030;
+}
+
+
+.header-right {
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.clock-time {
+    padding-top: 30px;
+    /* border: 2px solid green; */
+    display: flex;
+    padding-right: 10px;
+}
+
+.clock-time a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+
+.check {
+
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+.check a {
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #000;
+    /* font-size: 16px; */
+}
+
+.check a:hover{
+
+    box-shadow:5px 5px 4px #303030 ;
+    /* background-color: ; */
+    transition: right .2s ease;
+    color: #2EA9DF;
+   
+}
+
+/* -------------------  banner ------------------ */
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid; */
+    /* width: 100vw; */
+    
+}
+
+.banner-img img{
+    width: 100%;
+    /* height: 850px; */
+}
+
+
+.banner-title{
+    /* border: 1px solid; */
+    position: absolute;
+    right: -80px;
+    top: 280px;
+    
+}
+
+.banner-title::before{
+    content: "";
+    height: 1px;
+    background: #000;
+    top: 83%;
+    left: 11.2%;
+    width: 100px;
+    position: absolute;
+   
+}
+
+.banner-title h2{
+    margin-top: 10px;
+    padding-left: 200px;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: .3em;
+}
+
+/* ---------------- main top --------------------- */
+
+.main{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.main::before{
+    content: "";
+    width: 600px;
+    height: 2px;
+    background: #A46822;
+    position: absolute;
+    top: 540px;
+    left: -150px;
+    transform: rotate(90deg);
+    opacity: .7;
+
+}
+
+.main::after{
+    content: "Dining Events";
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 900px;
+    left: 100px;
+    font-size: 64px;
+    font-family: 'Sedan SC', sans-serif;
+    color: #A46822;
+    letter-spacing: 0.3em;
+    opacity: .7;
+}
+
+.main-top{
+    /* padding: .5rem; */
+    margin-left: 300px;
+    margin-top: 20px;
+    font-size: 16px;
+    
+
+}
+
+.nav{
+    display: flex;
+    /* padding: 0; */
+    
+}
+
+.nav li{
+    /* padding-right: 10px; */
+}
+
+.nav li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 1rem;
+    content: "/";
+}
+
+.nav li a{
+    text-decoration: none;
+
+    color: #000;
+}
+
+.nav .about{
+    color: #A46822; 
+}
+
+
+/* ------------- mian title---------- */
+.main-title{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;    
+}
+
+.main-title h1{
+    padding: 0 20px;
+    font-size: 36px;
+}
+
+.main-title img{
+    height: 30px;
+    padding-top: 17px;
+    
+}
+
+
+/* -------------- restaurant ---------------- */
+
+/* .restaurant-item::before{
+    content: "1";
+    position: absolute;
+    top: -85px;
+    left: 17%;
+    font-size: 100px;
+    font-weight: 600;
+    color: #51A6E1;
+    border: 1px solid;
+    
+    
+} */
+
+.restaurant-pic{
+    margin-left: 250px;
+
+}
+
+.restaurant-pic > img{
+    width: 30vw;
+}
+
+.restaurant-item{
+    /* padding: 0 360px;  */
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.restaurant-right{
+    position: relative;
+    padding: 0 100px;
+}
+
+.restaurant-content{
+    text-align: center;
+    padding: 0 50px;
+}
+
+.restaurant-content h2{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.restaurant-content p{
+    margin-top: 20px;
+    font-size: 16px;
+    
+}
+
+.restaurant-label{
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 50px
+    
+
+}
+
+.restaurant-list{
+    font-size: 14px;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.restaurant-button{
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+}
+
+.restaurant-button a{
+    text-decoration: none;
+    color: white;
+    background-color: #242021;
+    border-radius: 22px;
+    padding: 8px 15px;
+    font-size: 18px;
+   
+}
+
+
+/* ------------------- bottom ---------------------- */
+.bottom{
+    background-color: #2EA9DF;
+    color: white;
+     /* margin-top: 50px; */
+}
+
+.footer{
+    max-width: 1200px;
+    padding: 40px 0 10px 0;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+}
+
+.footer-nav li{
+    /* margin-right: 10px; */
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}
+
+
+
+.footer-logo{
+    height: 100px;
+    
+}
+
+.li-logo{
+    display: flex;
+    /* border: 1px solid white; */
+    
+}
+
+.hotelname{
+    padding-top: 35px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+.contact-us{
+    /* border: 1px solid red;    */
+    line-height: 2rem;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-align: left;
+    /* text-align: left; */
+    /* justify-content:flex-start */
+    /* height: 2.3rem; */
+    /* font-family: 'Sedan SC', sans-serif; */
+}
+
+.contact-us .p1{
+    /* font-family: 'Sedan SC', sans-serif; */
+    text-align: left;
+}
+
+
+.contact-us .p3{
+    /* font-family: 'Noto Sans TC'; */
+    text-align: left;
+}
+
+.follow-us {
+    width: 200px;
+    text-align: center  ;
+}
+
+.footer-icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .2em;
+    /* font-family: 'Sedan SC', sans-serif; */
+}

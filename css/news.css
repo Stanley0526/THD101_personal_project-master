@@ -1,0 +1,608 @@
+@import url('reset.css');
+
+body {
+    /* width: 100vw; */
+    font-size: 20px;
+    font-family: 'Noto Sans TC';
+    line-height: 1.6;
+    
+    /* box-sizing: border-box; */
+
+
+}
+
+.button-group{
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    z-index: 100;
+    text-align: center;
+}
+
+.bookbutton > img{
+    height: 13vh;
+    opacity: .7;
+}
+
+.bookbutton > img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.topbutton > i{
+    font-size: 6vh;
+    opacity: .6;
+    color: #000;
+}
+
+.topbutton > i:hover{
+    opacity: 1;
+    /* transform: scale(1.5); */
+}
+
+
+
+/* -------------------------- footer -------------------------- */
+.top {
+    /* background: #51A6E1; */
+    /* opacity: 1; */
+    width: 100%;    
+    position: fixed;
+    z-index: 10;
+    background:#2EA9DF;
+
+
+}
+
+.header {
+    /* border: 1px solid blue;  */
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    /* padding: 10px 0; */
+
+    /* justify-content:first baseline; */
+}
+
+.logo {
+    padding: 10px 0 0 10px ;
+    display: flex;
+
+    /* height: 30px; */
+    /* border: 1px solid red; */
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+
+.menu {
+    /* border: 1px solid red; */
+    display: flex;
+    padding-top: 30px;
+    letter-spacing: 0.1em;
+    /* color: white; */
+
+
+
+}
+
+.menu li {
+
+    margin-left: 30px;
+    /* color: white; */
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    color: #ccc;
+    text-shadow: 5px 5px 4px #303030;
+}
+
+
+.header-right {
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.clock-time {
+    padding-top: 30px;
+    /* border: 2px solid green; */
+    display: flex;
+    padding-right: 10px;
+}
+
+.clock-time a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+
+.check {
+
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+.check a {
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #000;
+    /* font-size: 16px; */
+}
+
+.check a:hover{
+
+    box-shadow:5px 5px 4px #303030 ;
+    /* background-color: ; */
+    transition: right .2s ease;
+    color: #2EA9DF;
+   
+}
+
+/* -------------------  banner ------------------ */
+
+.banner {
+    position: relative;
+    /* width: 100vw; */
+    /* overflow: hidden; */
+    
+}
+
+.banner-img > img{
+    width: 100%;
+    /* height: 850px; */
+}
+
+
+.banner-title{
+    position: absolute;
+    left: 100px;
+    bottom:  300px;
+}
+
+.banner-title::before{
+    content: "";
+    height: 1px;
+    background: #000;
+    top: 83%;
+    left: 11.2%;
+    width: 100px;
+    position: absolute;
+   
+}
+
+.banner-title h2{
+    margin-top: 10px;
+    padding-left: 200px;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: .3em;
+}
+
+/* ---------------- main top --------------------- */
+
+.main{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.main::before{
+    content: "";
+    width: 600px;
+    height: 2px;
+    background: #A46822;
+    position: absolute;
+    top: 520px;
+    left: -150px;
+    transform: rotate(90deg);
+    opacity: .7;
+
+}
+
+.main::after{
+    content: "News";
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 850px;
+    left: 100px;
+    font-size: 64px;
+    font-family: 'Sedan SC', sans-serif;
+    color: #A46822;
+    letter-spacing: 0.3em;
+    opacity: .7;
+}
+
+.main-top{
+    /* padding: .5rem; */
+    margin-left: 300px;
+    margin-top: 20px;
+    font-size: 16px;
+    
+
+}
+
+.nav{
+    display: flex;
+    /* padding: 0; */
+    
+}
+
+
+
+.nav li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 1rem;
+    content: "/";
+}
+
+.nav li a{
+    text-decoration: none;
+
+    color: #000;
+}
+
+.nav .about{
+    color: #A46822; 
+}
+
+/* ------------- mainn title---------- */
+.main-title{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;    
+}
+
+.main-title h1{
+    padding: 0 20px;
+    font-size: 36px;
+}
+
+.main-title img{
+    height: 30px;
+    padding-top: 17px;
+    
+}
+
+
+
+/* ----------- main news ------------------- */
+.main-news{
+
+    /* border: 1px solid red; */
+    /* padding: 0 300px; */
+    
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* justify-content: center; */
+}
+
+.news-left{
+    position: relative;
+}
+
+.news-left span{
+
+    font-size: 36px;
+    position: absolute;
+    background: #2EA9DF;
+    line-height: 100px;
+    width: 300px;
+    height: 100px;
+    left:  -20px;
+    top: -30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.news-left img{
+    
+    height: 500px;
+}
+
+.news-right{
+    /* background-color: #ebebeb; */
+    padding: 15px 0;
+    /* border: 1px solid #51A6E1;   */
+}
+
+
+
+.news-right h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.news-right h3{
+    text-align: center;
+    padding: 0 40px;
+    /* font-size: 18px; */
+}
+
+.time{
+    display: flex;
+    /* padding: 0 60px; */
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;    
+    font-size: 18px;
+}
+
+.time li{
+    margin: 0 20px; 
+}
+
+.time li:not(:last-child)::after {
+    display: inline-block;
+    position: absolute;
+    /* margin: 0 2rem; */
+    content: "→";
+    left: 48%;
+    top: 1px;
+}
+
+.news-botton{
+    text-align: center;
+    position: relative;
+}
+
+.news-right a{
+    text-decoration: none;
+    color:#A46822 ;
+    /* margin-bottom: ; */
+}
+
+.news-right a::after{
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    /* margin-top: 0px; */
+    height: 3px;
+    left: 42.5%;
+    width: 65px;    
+    background: #A46822;
+    text-align: center;
+}
+
+/* ----------------------- All news --------------------------- */
+
+.all-news{
+    margin-top: 150px;
+}
+
+.all-news h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.allnewsCard{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap; 
+    /* justify-content: center; */
+  
+}
+
+.card{
+    margin-left: 16px;
+    margin-bottom: 60px;
+    border: 1px solid #a5a5a5;
+    position: relative;
+    background-color: #ebebeb;
+    margin: 0 auto;
+}
+
+.card-item{
+    text-align: center;
+    text-decoration: none;
+    width: 350px;
+    /* width: 300px; */
+    
+    /* position: relative; */
+}
+
+
+
+.card span{
+    /* display: flex; */
+    height: 30px;
+    background-color: rgba(20, 139, 236, 0.644);
+    position: absolute;
+    top: 242px;
+    right: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    
+
+    /* z-index: 50; */
+}
+
+.card-image > img{
+    width: 350px;
+}
+
+.text{
+    margin-top: 20px;
+    color: black;
+    background-color: ;
+    
+}
+
+.text h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+    letter-spacing: .4em;
+}
+
+.text > p{
+    font-size: 16px;
+    letter-spacing: .2em;
+    margin-bottom: 40px;
+}
+
+.more-new{
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+.more-new a{
+    /* position: absolute; */
+    text-decoration: none;
+    color: #A46822;
+}
+
+.more-new a::before{
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: -20px;
+    left: 49%;
+    transform: translate(-50%);
+    transform: rotate(90deg);
+    opacity: .7;
+
+}
+
+.more-new a::after{
+    content: "";
+ 
+    position: absolute;
+    display: block;
+    height: 3px;
+    
+    left: 50%;
+    width: 60px;    
+    background: #A46822;
+    transform: translate(-51%);
+    /* margin-top: 20px; */
+    
+}
+/* .more-new:link .card4 , .card5 , .card6:{
+    display: block;
+}  */
+
+
+
+
+/* ------------------- bottom ---------------------- */
+.bottom{
+    background-color: #2EA9DF;
+    color: white;
+     /* margin-top: 50px; */
+}
+
+.footer{
+    max-width: 1200px;
+    padding: 40px 0 10px 0;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+}
+
+.footer-nav li{
+    /* margin-right: 10px; */
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}
+
+
+
+.footer-logo{
+    height: 100px;
+    
+}
+
+.li-logo{
+    display: flex;
+    /* border: 1px solid white; */
+    
+}
+
+.hotelname{
+    padding-top: 35px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+.contact-us{
+    /* border: 1px solid red;    */
+    line-height: 2rem;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-align: left;
+    /* text-align: left; */
+    /* justify-content:flex-start */
+    /* height: 2.3rem; */
+    /* font-family: 'Sedan SC', sans-serif; */
+}
+
+.contact-us .p1{
+    /* font-family: 'Sedan SC', sans-serif; */
+    text-align: left;
+}
+
+
+.contact-us .p3{
+    /* font-family: 'Noto Sans TC'; */
+    text-align: left;
+}
+
+.follow-us {
+    width: 200px;
+    text-align: center  ;
+}
+
+.footer-icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .2em;
+    /* font-family: 'Sedan SC', sans-serif; */
+}

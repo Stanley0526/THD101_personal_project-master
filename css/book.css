@@ -1,0 +1,33 @@
+@import url('reset.css');
+
+
+.logo{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.logo img{
+    height: 300px;
+}
+
+.text{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.index{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.index button{
+    font-size: 60px;
+    border-radius: 20px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    /* border:  0; */
+}

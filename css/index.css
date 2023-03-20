@@ -1,0 +1,1137 @@
+@import url('reset.css');
+
+body {
+    /* width: 100vw; */
+    font-size: 20px;
+    font-family: 'Noto Sans TC';
+    line-height: 1.6;
+    
+    box-sizing: border-box;
+
+
+}
+
+.button-group{
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    z-index: 100;
+    text-align: center;
+}
+
+.bookbutton > img{
+    height: 13vh;
+    opacity: .7;
+}
+
+.bookbutton > img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.topbutton > i{
+    font-size: 6vh;
+    opacity: .6;
+    color: #000;
+}
+
+.topbutton > i:hover{
+    opacity: 1;
+    /* transform: scale(1.5); */
+}
+
+
+
+/* -------------------------- footer -------------------------- */
+.top {
+    /* background: #51A6E1; */
+    /* opacity: 1; */
+    width: 100%;    
+    position: fixed;
+    z-index: 10;
+    background:#2EA9DF;
+
+
+}
+
+.header {
+    /* border: 1px solid blue;  */
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    /* padding: 10px 0; */
+
+    /* justify-content:first baseline; */
+}
+
+.logo {
+    padding: 10px 0 0 10px ;
+    display: flex;
+
+    /* height: 30px; */
+    /* border: 1px solid red; */
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+
+.menu {
+    /* border: 1px solid red; */
+    display: flex;
+    padding-top: 30px;
+    letter-spacing: 0.1em;
+    /* color: white; */
+
+
+
+}
+
+.menu li {
+
+    margin-left: 30px;
+    /* color: white; */
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    color: #ccc;
+    text-shadow: 5px 5px 4px #303030;
+}
+
+
+.header-right {
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.clock-time {
+    padding-top: 30px;
+    /* border: 2px solid green; */
+    display: flex;
+    padding-right: 10px;
+}
+
+.clock-time a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+
+.check {
+
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+.check a {
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #000;
+    /* font-size: 16px; */
+}
+
+.check a:hover{
+
+    box-shadow:5px 5px 4px #303030 ;
+    /* background-color: ; */
+    transition: right .2s ease;
+    color: #2EA9DF;
+   
+}
+
+/* --------------------------- banner ---------------------------- */
+.banner {
+    position: relative;
+    /* background-attachment: fixed; */
+    
+}
+
+.img2{
+    position: absolute;
+    height: 350px;
+    z-index: 1;
+   
+    top: 480px;
+    right:  200px;
+    animation: shell 1s   forwards;
+}
+
+
+@keyframes shell {
+   
+    0%{
+        left: -800px;
+        transform: rotate(0deg);
+        
+    }
+
+    100%{
+        left: 600px;
+        transform: rotate(360deg);
+        
+    }
+}
+
+.img1{
+    position: absolute;
+    height: 350px;
+    z-index: 3;
+    top: 200px;
+    left: 200px;
+    animation: star 1.3s   forwards;
+}
+
+@keyframes star {
+
+    0%{
+        left: -800px;
+        transform: rotate(0deg);
+        
+    }
+
+    100%{
+        left: 200px;
+        transform: rotate(360deg);
+        
+
+    }
+}
+
+
+
+.video-wrapper {
+    
+    z-index: -4 ;
+
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+  
+}
+
+
+.video-wrapper video{
+    
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    /* background-attachment: fixed; */
+}
+
+
+
+.video-wave{
+    /* height: 100%; */
+    z-index: -70;
+}
+
+.video-wave video{
+    position: fixed;
+   
+    position: absolute;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+    
+    
+}
+
+.banner-height{
+    /* z-index: -20; */
+    height: 60rem;
+    display: block;
+    
+    /* background: #000; */
+    
+
+}
+
+.banner h1 {
+    position: absolute;
+    /* display: flex; */
+    top: 230px;
+    right: 255px;
+    font-size: 70px;
+    font-family: 'Sedan SC', sans-serif;
+    letter-spacing: 0.1em;
+    text-shadow: 5px 5px 4px #303030;
+    color: white;
+    
+}
+
+.banner h2 {
+    position: absolute;
+    top: 350px;
+    right: 40px;
+    font-size: 30px;
+    text-shadow: 5px 5px 4px #303030;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+
+
+/* ------------------------------  news ------------------------------- */
+
+
+
+.news {
+    /* position: relative; */
+    /* border: 1px solid red; */
+    padding-top: 80px;
+    height: 1000px;
+    /* width: 1920px; */
+    /* z-index: -50; */
+
+    background-color: #fff; 
+    
+}
+
+
+
+.news h1{
+    /* margin-top: 50px; */
+    letter-spacing: 1.5em;
+    font-size: 36px;
+    padding-left: 54px;
+
+    text-align: center;
+}
+
+.news h2{
+    font-size: 26px;
+    letter-spacing: .1em;
+    font-family: 'Sedan SC', sans-serif;
+    margin-top: 10px;
+    color: #A46822;
+    margin-bottom: 60px;
+    text-align: center;
+    padding-left: 2.6px;
+    /* margin-top: 50px;     */
+}
+
+.news h2::after{
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 1px;
+    /* right: 15%; */
+    left: 50%;
+    width: 20%;    
+    background: #000;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+
+.news-container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding-bottom: 50px;
+    position: relative;
+   
+    
+}
+
+.bars1{
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    left: 13.5%;
+    top: 75px;
+    margin: 0px 0 0 -50px;
+    /* transform: rotate(90deg); */
+    /* border:2px solid #FFF; */
+}
+.bars2{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 55%;
+    top: 75px;
+    margin: 0px 0 0 -50px;
+    /* transform: rotate(-90deg); */
+    /* border:2px solid #FFF; */
+}
+.bar{
+   
+    background: #cb18f8;
+    
+    width: 3px;
+    position: absolute;
+   
+    bottom: 1px;
+    animation: voice 0ms -800ms linear infinite alternate;
+   
+    
+    
+    
+}
+
+@keyframes voice{
+        
+    0%{
+        height: 50px;
+        opacity: .35;
+        background: #2EA9DF;
+    }
+    50%{
+        height: 100px;
+    }
+
+    100%{
+        height: 250px;
+        opacity: 1;
+    }
+}
+    .bar:nth-child(1)  { left: 50px; animation-duration: 400ms; }
+    .bar:nth-child(2)  { left: 54px; animation-duration: 433ms; }
+    .bar:nth-child(3)  { left: 59px; animation-duration: 407ms; }
+    .bar:nth-child(4)  { left: 63px; animation-duration: 458ms; }
+    .bar:nth-child(5)  { left: 67px; animation-duration: 400ms; }
+    .bar:nth-child(6)  { left: 71px; animation-duration: 427ms; }
+    .bar:nth-child(7)  { left: 75px; animation-duration: 441ms; }
+    .bar:nth-child(8)  { left: 79px; animation-duration: 419ms; }
+    .bar:nth-child(9)  { left: 83px; animation-duration: 487ms; }
+    .bar:nth-child(10) { left: 87px; animation-duration: 442ms; }
+    .bar:nth-child(11)  { left: 91px; animation-duration: 474ms; }
+    .bar:nth-child(12)  { left: 95px; animation-duration: 433ms; }
+    .bar:nth-child(13)  { left: 99px; animation-duration: 407ms; }
+    .bar:nth-child(14)  { left: 103px; animation-duration: 458ms; }
+    .bar:nth-child(15)  { left: 107px; animation-duration: 400ms; }
+    .bar:nth-child(16)  { left: 111px; animation-duration: 427ms; }
+    .bar:nth-child(17)  { left: 115px; animation-duration: 441ms; }
+    .bar:nth-child(18)  { left: 119px; animation-duration: 419ms; }
+    .bar:nth-child(19)  { left: 123px; animation-duration: 487ms; }
+    .bar:nth-child(20) { left: 127px; animation-duration: 442ms; }
+    
+
+.news-container span::after{
+    content: "" ;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../img/newsbg.jpg');
+    background-position: center center;
+    /* background-color: #A46822; */
+    height: 600px;
+    width: 100%;
+    z-index: 0;
+    position: absolute; 
+    left: 0;
+    /* opacity: .6; */
+
+}
+
+.news-container img{
+    margin-top: 50px;
+    margin-right: 50px;
+    z-index: 5;
+    filter: brightness(150%);
+    /* width: 100vh; */
+    
+}
+
+/* .news-container img:hover{
+    box-shadow:10px 10px 10px rgb(87, 87, 87);
+    transform: scale(1.1);
+} */
+
+.news-content{
+    text-align: center;
+    padding-top: 180px;;
+    /* border: 1px solid; */
+    position: relative;
+    color: white;
+}
+
+
+.news-content h3{
+    font-size: 36px;
+    padding-bottom: 30px;
+    color: white;
+    letter-spacing: .1em;
+    
+}
+
+.news-content p{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    color: white;
+    letter-spacing: .1em;
+}
+
+.news-content a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: .1em;
+    /* border: 1px solid; */
+    padding: 0 8px 10px 8px;
+    
+}
+
+.news a::after{
+    
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 17%;
+    left: 50%;
+    transform: translate(-51%);
+    background: white;
+    margin-top: 3px;
+}
+
+.news a:hover::after{
+    
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 25%;
+    left: 50%;
+    transform: translate(-51%);
+    background: white;
+    margin-top: 3px;
+    transition-duration:.1s; 
+}
+
+/* ---------------------- wrapper-other ------ */
+
+.other-wrapper{
+    overflow: hidden;
+    background-image: url(../img/Frame\ 32.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* width: 100%;    */
+    height: 80%;
+    /* height: 100%; */
+    /* border: 2px so green; */
+    /* background-size:; */
+}
+
+
+/* -------------------------- Room guide ----------------------------- */
+
+
+.room{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.room h1{
+    letter-spacing: 1.5em;
+    font-size: 36px;
+    padding-left: 54px;
+    text-align: center;
+}
+
+.room h2{
+    font-size: 26px;
+    letter-spacing: .1em;
+    font-family: 'Sedan SC', sans-serif;
+    margin-top: 10px;
+    color: #A46822;
+    margin-bottom: 60px;
+    text-align: center;
+    /* padding-right: 30px; */
+    padding-left: 2.6px;
+}
+
+.room h2::after{
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 1px;
+    /* right: 15%; */
+    left: 50%;
+    width: 20%;    
+    background: #000;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+
+
+.room-introduce{
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    max-width: 1320px;
+    
+    margin: 0 auto;
+    position: relative;
+    justify-content: space-between;
+
+    
+    
+}
+
+.room-introduce p{
+    letter-spacing: .1em;
+   
+}
+
+.room-introduce a{
+    text-decoration: none;
+    color: #A46822;
+    letter-spacing: .2em;
+    /* line-height: 30px; */
+    /* border: 1px solid red; */
+    padding-right: 20px;
+}
+
+.room-introduce a::after{
+    
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #A46822;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+}
+
+.room-introduce a:hover{
+    transform: scale(1.2);
+    
+}
+
+.room-introduce a:hover::after{
+    
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #A46822;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    right: -10px;
+    bottom: 3px;
+}
+
+
+.room-photo{
+    width: 1320px;
+    height: 523px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:   1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* outline: 1px solid; */
+    overflow: hidden;
+   
+}
+
+.photo1{
+    width: 100%;
+    grid-column-start: 1 ;
+    grid-column-end: 3  ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* padding-right: 10px; */
+    
+    
+
+}
+
+
+
+.photo2{
+    /* width: 100%; */
+    grid-column-start: 3 ;
+    grid-column-end: 5  ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 10px;
+}
+
+.photo3{
+    grid-column-start: 3 ;
+    grid-column-end: 5  ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.photo4{
+    grid-column-start: 4 ;
+    grid-column-end: 5  ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* ---------------------- hotel-Facilities -------------------------------------- */
+
+.hotel-Facilities {
+    /* width: 100%; */
+    padding-top: 150px ;
+    
+    position: relative;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.hotel-Facilities h1{
+    letter-spacing: 1.5em;
+    font-size: 36px;
+    padding-left: 54px;
+    text-align: center;
+}
+
+.hotel-Facilities h2{
+    
+    font-size: 26px;
+    letter-spacing: .1em;
+    font-family: 'Sedan SC', sans-serif;
+    margin-top: 10px;
+    color: #A46822;
+    margin-bottom: 60px;
+    text-align: center;
+    padding-left: 2.6px;
+    
+    /* padding-left: 2px;    */
+}
+
+
+
+.hotel-Facilities h2::after{
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 1px;
+    /* right: 15%; */
+    left: 50%;
+    width: 20%;    
+    background: #000;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+
+
+
+.facilities-introduce {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.facilities-introduce p{
+    letter-spacing: .1em;
+}
+
+
+.facilities-introduce a{
+    letter-spacing: .2em;
+    text-decoration: none;
+    /* position: absolute; */
+    padding-right: 30px;
+    color: #A46822;
+    /* font-family:'Sedan SC', sans-serif ; */
+}
+
+.facilities-introduce a::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #A46822;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+}
+
+.facilities-introduce a:hover{
+    transform: scale(1.2);
+    
+}
+
+.facilities-introduce a:hover::after{
+    
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #A46822;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+}
+
+
+
+.item{
+    
+    display: flex;
+    /* text-align: center; */
+    /* border: 1px solid yellow; */
+    /* padding-right: 30px; */
+    
+    /* max-width: 1200px; */
+    justify-content: center;
+    /* margin: 0 auto; */
+    margin-top: 30px;
+    
+}
+
+.item li{
+    margin: 0 5px;
+    position: relative;
+    /* flex-grow: 1 ; */
+}
+
+
+.item1::after{
+    content: "三溫暖、湯屋";
+    background-color: rgba(255, 255, 255, .6);
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    color: black;
+    font-size: 36px;
+    padding: 10px 20px;
+}
+
+.item1:hover{
+    /* transform: scale(1.2); */
+}
+
+
+.item2::after{
+    content: "游泳池";
+    background-color: rgba(255, 255, 255, .6);
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    color: black;
+    font-size: 36px;
+    padding: 10px 20px;
+    
+}
+
+.item3::after{
+    content: "健身房";
+    background-color: rgba(255, 255, 255, .6);
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    color: black;
+    font-size: 36px;
+    padding: 10px 20px;
+}
+
+
+
+
+/* -------------------------- Dining-Events  ---------------- */
+
+.dining-Events{
+    margin-top: 100px;
+    /* border: 2px solid green;  */
+}
+
+.dining-Events h1{
+    letter-spacing: 1.5em;
+    font-size: 36px;
+    padding-left: 54px;
+    text-align: center;
+}
+
+.dining-Events h2{
+    font-size: 26px;
+    letter-spacing: .1em;
+    font-family: 'Sedan SC', sans-serif;
+    margin-top: 10px;
+    color: #A46822;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 2.6px;
+}
+
+.dining-Events h2::after{
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 1px;
+    /* right: 15%; */
+    left: 50%;
+    width: 20%;    
+    background: #000;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+
+
+.restaurant-container{
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+
+.restaurant-item{
+    width:100% ;
+    height: 100%;
+    position: relative;
+    margin:  0 20px;
+    /* border: 1px solid; */
+
+}
+
+.restaurant-name p{
+    position: absolute;
+    display: flex;
+    color: white;
+    bottom: 7px;
+    font-size: 30px;
+    width: 930px;
+    background:linear-gradient(90deg, rgba(9,41,45,0.7) 0%,rgba(43,70,89,0.4) 68%,rgba(59,83,109,0) 100%);
+    padding: 20px 20px;    
+    /* margin-left: 20px; */
+    /* text-align: center; */
+    
+}
+
+.restaurant-name a{
+    /* padding-left: 500px; */
+    position: absolute;
+    right: 50px;
+    bottom: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: .1em;
+}
+.restaurant-name a::after{
+
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-51%);
+    background: white;
+    margin-top: 3px;
+}
+
+
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.button-item{
+    /* background-color: tomato; */
+    height: 50px;
+    margin-right: 20px;
+}
+
+.button-item1 button{
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-right: 20px;
+    
+}
+
+.button-item button{
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+
+/* --------------- view ---------------- */
+
+.view{
+    margin-top: 100px;
+    /* border: 1px solid blue; */
+    overflow: hidden;
+}
+
+.view h1{
+    letter-spacing: 1.5em;
+    font-size: 36px;
+    padding-left: 54px;
+    text-align: center;
+}
+
+.view h2{
+    font-size: 26px;
+    letter-spacing: .1em;
+    font-family: 'Sedan SC', sans-serif;
+    margin-top: 10px;
+    color: #A46822;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 2.6px;
+}
+
+.view h2::after{
+    content: "";
+    /* border: 1px solid #A46822; */
+    position: absolute;
+    display: block;
+    height: 1px;
+    /* right: 15%; */
+    left: 50%;
+    width: 20%;    
+    background: #000;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+.view-container{
+    /* width: 1920px; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    display: flex;
+    /* overflow: hidden; */
+}
+
+
+/* ------------------- bottom ---------------------- */
+.bottom{
+    background-color: #2EA9DF;
+    color: white;
+     /* margin-top: 50px; */
+}
+
+.footer{
+    max-width: 1200px;
+    padding: 40px 0 10px 0;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+}
+
+.footer-nav li{
+    /* margin-right: 10px; */
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}
+
+
+
+.footer-logo{
+    height: 100px;
+    
+}
+
+.li-logo{
+    display: flex;
+    /* border: 1px solid white; */
+    
+}
+
+.hotelname{
+    padding-top: 35px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+.contact-us{
+    /* border: 1px solid red;    */
+    line-height: 2rem;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-align: left;
+    /* text-align: left; */
+    /* justify-content:flex-start */
+    /* height: 2.3rem; */
+    /* font-family: 'Sedan SC', sans-serif; */
+}
+
+.contact-us .p1{
+    /* font-family: 'Sedan SC', sans-serif; */
+    text-align: left;
+}
+
+
+.contact-us .p3{
+    /* font-family: 'Noto Sans TC'; */
+    text-align: left;
+}
+
+.follow-us {
+    width: 200px;
+    text-align: center  ;
+}
+
+.footer-icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .2em;
+    /* font-family: 'Sedan SC', sans-serif; */
+}
